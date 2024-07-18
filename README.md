@@ -1,64 +1,62 @@
+![Banner](https://github.com/thirdweb-example/thirdweb-auth-express/assets/17715009/06383e68-9c65-4265-8505-e88e573443f9)
+# thirdweb expo starter
 
-![tw-banner](https://github.com/thirdweb-example/vite-starter/assets/57885104/cfe2164b-b50b-4d8e-aaaa-31331da2d647)
+Starter template to build an onchain react native app with [thirdweb](https://thirdweb.com/) and [expo](https://expo.dev/).
 
-# vite-starter
+### Features
 
-Starter template to build onchain applications with [thirdweb](https://thirdweb.com) and [vite](https://vitejs.dev/). 
-
-## Features 
-
-- thirdweb & vite pre-installed and configured to reduce setup steps
-- ConnectButton to onboard users to your application
+- in-app wallets using phone number, email or social logins to create a wallet for the user
+- smart accounts to sponsor gas
+- connecting to external wallets like MetaMask via WalletConnect
+- autoconnecting to the last connected wallet on launch
+- reading contract state and events
+- writing to the blockchain
 
 ## Installation
 
 Install the template using [thirdweb create](https://portal.thirdweb.com/cli/create)
 
 ```bash
-  npx thirdweb create app --vite
+  npx thirdweb create app --expo
 ```
 
-## Environment Variables
+## Get started
 
-To run this project, you will need to add the following environment variables to your .env file:
-
-`CLIENT_ID`
-
-To learn how to create a client ID, refer to the [client documentation](https://portal.thirdweb.com/typescript/v5/client). 
-
-## Run locally
-
-Install dependencies
+1. Install dependencies
 
 ```bash
-yarn
+yarn install
 ```
 
-Start development server
+2. Get your thirdweb client id
+
+Rename the `.env.example` file to `.env` and paste in your thirdweb client id.
+
+You can obtain a free client id from the [thirdweb dashboard](https://thirdweb.com/dashboard/settings).
+
+3. Start the app
 
 ```bash
-yarn dev
+yarn ios
 ```
 
-Create a production build
+or
 
 ```bash
-yarn build
+yarn android
 ```
 
-Preview the production build
+To run this app, you'll need either:
 
-```bash
-yarn preview
-```
+- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
+- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
 
 ## Additional Resources
 
 - [Documentation](https://portal.thirdweb.com/typescript/v5)
 - [Templates](https://thirdweb.com/templates)
 - [YouTube](https://www.youtube.com/c/thirdweb)
-- [Blog](https://blog.thirdweb.com)
 
-## Need help?
+## Support
 
 For help or feedback, please [visit our support site](https://thirdweb.com/support)
