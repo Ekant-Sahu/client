@@ -1,0 +1,45 @@
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1b1b1b;
+    padding: 1rem 2rem;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+ 
+  nav .nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    margin: 0 1rem;
+  }
+  
+  nav .nav-link:hover {
+    color: #00ffb9;
+  }
+  
+  .nav-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .metamask-icon {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    margin-left: 1rem;
+  }
+  
