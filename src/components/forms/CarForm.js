@@ -3,15 +3,33 @@ import "./styles.css";
 
 const CarForm = () => {
   return (
-    <div className="form-container">
-      <h1 className="title">Form Page</h1>
-      <form className="form">
-        <input type="text" className="input" placeholder="Input 1" />
-        <input type="text" className="input" placeholder="Input 2" />
-        <input type="text" className="input" placeholder="Input 3" />
-        <input type="text" className="input" placeholder="Input 4" />
-        <button type="submit" className="submit-button">Submit</button>
-      </form>
+    <div className="form-wrapper">
+      <div className="form-container">
+        <h1 className="title">Car Details</h1>
+        <p className="sub">Fill the details below</p>
+        <br/>
+        <form className="form">
+          <input type="text" className="input" placeholder="Name of Owner"required />
+          <input type="file" className="input" placeholder="Vehicle Details"required />
+          <input 
+            type="text" 
+            className="input" 
+            placeholder="Premium Amount (₹)" 
+            pattern="^\₹?\d+(,\d{3})*(\.\d{1,2})?$" 
+            title="Please enter a valid amount in rupees" 
+            required
+          />
+          <input 
+            type="text" 
+            className="input" 
+            placeholder="Insured Amount (₹)" 
+            pattern="^\₹?\d+(,\d{3})*(\.\d{1,2})?$" 
+            title="Please enter a valid amount in rupees" 
+            required
+          />
+          <button type="submit" className="submit-button">Submit</button>
+        </form>
+      </div>
     </div>
   );
 };
