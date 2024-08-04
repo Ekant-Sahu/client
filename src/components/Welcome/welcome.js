@@ -4,6 +4,8 @@ import { faCar, faMotorcycle } from '@fortawesome/free-solid-svg-icons';
 import insureImage from '../../assets/insure.png';
 import "./welcome.css"
 import { NavLink } from 'react-router-dom';
+import Contact from '../Contact/contact';
+import FAQShow from '../FAQ/faqshow';
 
 const Welcome= () => {
   
@@ -41,7 +43,8 @@ const Welcome= () => {
     <img src={insureImage} alt='insure'/>
   </div>
 </div>
-
+<Contact/>
+<FAQShow/>
 </>
 );
 };

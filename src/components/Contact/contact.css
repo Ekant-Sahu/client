@@ -36,9 +36,7 @@
     width: 0;
   }
   
-  .ctc.dark {
-    color: #ff6b81;
-  }
+ 
   
   .contact-container {
     padding: 50px;
@@ -46,19 +44,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: hsl(0, 35%, 92%);
-    border: 1px solid #c36969;
+    background-color: white;
+    /* border: 1px solid #c36969; */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     font-family: Montserrat;
     transition: background-color 0.3s, border-color 0.3s, color 0.3s;
   }
   
-  .contact-container.dark {
-    background-color: #222;
-    border-color: #555;
-    color: #ddd;
-  }
+ 
   
   .contact-form {
     flex: 1;

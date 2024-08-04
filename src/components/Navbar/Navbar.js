@@ -111,7 +111,7 @@ const Navbar = () => {
             
             <li><NavLink to="/claims" className="nav-link">Claims</NavLink></li>
             <li><NavLink to="/contact" className="nav-link">Contact</NavLink></li>
-            <li><NavLink to="/resources" className="nav-link">FAQs</NavLink></li>
+            <li><NavLink to="/faq" className="nav-link">FAQs</NavLink></li>
           </ul>
         </div>
         <div className="metamask-section">

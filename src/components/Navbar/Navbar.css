@@ -37,9 +37,9 @@ body {
   font-weight: bold;
 }
 
+
 .nav-links ul {
   display: flex;
-  flex-direction: row;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -48,11 +48,25 @@ body {
 .nav-links li {
   margin: 0 1rem;
   align-items: center;
-  position: relative;
+  padding-bottom: 2px;
+  background-image: linear-gradient(#c36969 0 0);
+  background-position: 0 100%; 
+  background-size: 0% 2px;
+  background-repeat: no-repeat;
+  transition: background-size 0.3s, background-position 0s 0.3s; 
 }
 
-.nav-links li:hover {
-  background-position: 100% 100%;
+.nav-links li::after{
+  content: '';
+  width: 0px;
+  height: 10px;
+  display: block;
+  background: #c36969;
+  transition: 300ms;
+}
+
+.nav-links li:hover  {
+  background-position: 100% 100%; 
   background-size: 100% 4px;
   color: #c36969;
 }
@@ -61,6 +75,7 @@ body {
   text-decoration: none;
   color: inherit;
 }
+
 
 .metamask-section {
   display: flex;

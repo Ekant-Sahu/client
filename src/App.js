@@ -16,6 +16,7 @@ import CarIn from './components/Pages/Cars/car';
 import OwnDam from './components/Pages/Cars/owndam';
 import ZeroCar from './components/Pages/Cars/zerodepr';
 import ElectricCar from './components/Pages/Cars/electric';
+import FAQShow from './components/FAQ/faqshow';
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
         <Route path="/products/car/own-damage" element={<OwnDam/>}/>
         <Route path="/products/car/zero-depreciation" element={<ZeroCar/>}/>
         <Route path='/products/car/electric' element={<ElectricCar/>}/>
+        <Route path='/faq' element={<FAQShow/>}/>
       </Routes>
     </Router>
   );

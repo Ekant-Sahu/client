@@ -25,6 +25,7 @@
     flex-direction: row;
     gap: 100px;
     transition: background-color 0.3s, color 0.3s;
+    margin-bottom: 120px;
   }
   
   .text-content {
