@@ -5,8 +5,9 @@ import { ethers } from "ethers";
 import { useState } from "react";
 
 const CarForm = () => {
-  const { createInsurance } = useStateContext();
+  const { createInsurance, claimInsurance, withdrawFunds } = useStateContext();
   const [form, setForm] = useState({
+    _id: 0,
     _vehicleDetails: "cg-06-bf-2016",
     _premium: ethers.utils.parseUnits("1", 18), // BigNumber
     _insuredAmount: ethers.utils.parseUnits("10", 18), // BigNumber
@@ -22,7 +23,26 @@ const CarForm = () => {
       ]);
       console.log("Insurance created successfully:", result);
     } catch (error) {
-      console.error("Failed to create insurance:", error);
+      console.error("Failed to creat insurance:", error);
+    }
+  };
+
+  const handleClaim = async (e) => {
+    e.preventDefault();
+    try {
+      const result = await claimInsurance([form._id, form._vehicleDetails]);
+      console.log("Insurance claimed successfully:", result);
+    } catch (error) {
+      console.error("Failed to claim insurance:", error);
+    }
+  };
+  const handleWithdraw = async (e) => {
+    e.preventDefault();
+    try {
+      const result = await withdrawFunds();
+      console.log("Insurance withdrawed successfully:", result);
+    } catch (error) {
+      console.error("Failed to withdraw fundes:", error);
     }
   };
 
@@ -36,6 +56,12 @@ const CarForm = () => {
         <input type="text" className="input" placeholder="Input 4" />
         <button type="submit" onClick={handleSubmit} className="submit-button">
           Submit
+        </button>
+        <button onClick={handleClaim} className="submit-button">
+          Claim
+        </button>
+        <button onClick={handleWithdraw} className="submit-button">
+          withdraw
         </button>
       </form>
     </div>

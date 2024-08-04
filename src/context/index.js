@@ -2,7 +2,7 @@ import React, { useContext, createContext } from "react";
 import {
   useAddress,
   useContract,
-  useMetamask,
+  useConnect,
   useContractWrite,
 } from "@thirdweb-dev/react";
 
@@ -17,8 +17,13 @@ export const StateContextProvider = ({ children }) => {
     "createInsurance"
   );
 
+  const { mutateAsync: claimInsuranceContract } = useContractWrite(
+    contract,
+    "claimInsurance"
+  );
+
   const address = useAddress();
-  const connect = useMetamask();
+  const connectWithMetamask = useConnect("injected");
 
   const publishInsurance = async (form) => {
     try {
@@ -33,13 +38,40 @@ export const StateContextProvider = ({ children }) => {
     }
   };
 
+  const claimInsurance = async (id, vehicleDetails) => {
+    try {
+      const data = await claimInsuranceContract([id, vehicleDetails]);
+      console.log("Claim success", data);
+    } catch (error) {
+      console.log("Claim failure", error);
+    }
+  };
+
+  const withdrawFunds = async () => {
+    if (!address) {
+      await connectWithMetamask();
+    }
+    if (!contract) {
+      throw new Error("Contract is not available");
+    }
+    try {
+      const data = await contract.call("withdrawFunds");
+      return data;
+    } catch (error) {
+      console.error("Failed to withdraw funds:", error);
+      throw error;
+    }
+  };
+
   return (
     <StateContext.Provider
       value={{
         address,
         contract,
         createInsurance: publishInsurance,
-        connect,
+        claimInsurance,
+        withdrawFunds,
+        connect: connectWithMetamask,
       }}
     >
       {children}
