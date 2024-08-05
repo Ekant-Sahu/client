@@ -30,7 +30,7 @@ function App() {
         <Route path="/bikes" element={<BikeForm />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/products/car/comprehensive" element={<CompreInsurance/>}/>
-        <Route path="//products/bike" element={<BikeIn/>}/>
+        <Route path="/products/bike" element={<BikeIn/>}/>
         <Route path="/products/bike/scooter" element={<ScooterInsurance/>}/>
         <Route path="/products/bike/comphrensive" element={<CompreBike/>}/>
         <Route path="/products/bike/electric" element={<ElectricBike/>}/>

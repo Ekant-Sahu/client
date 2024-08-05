@@ -8,7 +8,7 @@ const CompreInsurance = () => {
                 <h1>What is Comprehensive Car Insurance?</h1>
             </header>
             <section className="content">
-                <p>A Comprehensive Car Insurance Policy or comprehensive insurance is a type of motor insurance plan that covers car-related expenses arising from accidents, calamities, & other covered instances. The policy covers both Third-party liability cover & Own-Damage Cover.</p>
+                <p>A Comprehensive Car Insurance Policy or comprehensive insurance is a type of motor insurance plan that covers car-related expenses arising from accidents, calamities, & other covered instances.</p>
             </section>
             <section className="features">
                 <h2>Top Features of Comprehensive Car Insurance Policy</h2>

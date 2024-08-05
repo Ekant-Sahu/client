@@ -20,10 +20,6 @@ const ElectricCar = () => {
                         <p>In case of an unfortunate situation where you have caused an injury to a third-party or damaged third-party property, then your insurance policy will cover such liabilities.</p>
                     </li>
                     <li>
-                        <strong>Avoid Law-Mandated Penalties</strong>
-                        <p>As the Comprehensive Plan includes the law-mandated Third-Party Liability Cover, you will be protected against non-compliance penalties concerning car insurance.</p>
-                    </li>
-                    <li>
                         <strong>Avoid Expensive Repair Bills</strong>
                         <p>As the Comprehensive Cover offers Own Damage (OD) cover, it provides coverage for a major part of the repair bill in case of accidents, fire, natural calamities, riots, and losses due to theft. This means you do not have to pay an expensive repair bill in case of damages covered by the plan.</p>
                     </li>
