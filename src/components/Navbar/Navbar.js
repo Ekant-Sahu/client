@@ -51,6 +51,7 @@ const Navbar = () => {
       address: account,
     }));
     getBalance(account);
+    console.log(data);
   };
 
   return (

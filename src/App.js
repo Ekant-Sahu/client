@@ -17,6 +17,7 @@ import OwnDam from './components/Pages/Cars/owndam';
 import ZeroCar from './components/Pages/Cars/zerodepr';
 import ElectricCar from './components/Pages/Cars/electric';
 import FAQShow from './components/FAQ/faqshow';
+import Footer from './components/Footer/footer';
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
         <Route path='/products/car/electric' element={<ElectricCar/>}/>
         <Route path='/faq' element={<FAQShow/>}/>
       </Routes>
+      <Footer/>
     </Router>
   );
 }
