@@ -1,0 +1,59 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+header { margin-top: 50px;
+    background-color: #f0bdca;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+.content, .features {
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.features ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.features ul li {
+    background: url('../../assets/logo.jpg') no-repeat left center;
+    background-size: 20px;
+    padding-left: 30px;
+    margin-bottom: 10px;
+}
+
+.cta-button {
+    display: block;
+    width: 200px;
+    margin: 30px auto;
+    padding: 15px;
+    background-color: #6c63ff;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #5a54e8;
+}
